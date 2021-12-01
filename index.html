@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>ITZvinit</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+<style type="text/css">
+
+
+	*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* STYLING OUR CONTAINER DIV  */
+.container{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(images/BG-4.png);
+	background-size: cover;
+	background-position: center;
+}
+
+/*  STYLING OUR NAVBAR */
+.HEADER{
+	width: 100%;
+	height: 85px;
+}
+/*  STYLING OUR LOGO */
+.HEADER img{
+	width: 455px;
+	position: absolute;
+	top: -100px;
+	left: -13px;
+}
+
+/* styling our content DIV */
+
+.content{
+	color: whitesmoke;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 5%;
+}
+
+/* styling our Small of content DIV */
+
+.content small{
+	
+	font-family: chiller;
+}
+
+
+/* styling our Heading 2 of content DIV */
+
+.content h2{
+	font-size: 80px;
+	font-family: Constantia;
+}
+
+/* styling our Para  of content DIV */
+
+.content p{
+	font-size: 40px;
+	font-family: chiller;
+	font-style: italic;
+}
+
+
+/*  STYLING OUR BUTTON */
+
+.content button{
+	width: 90px;
+	height: 32px;
+	padding: 1px 1px;
+	position: absolute;
+	top: 100%;
+	left: 0.8%;
+	border: 1px solid whitesmoke;
+	border-top-left-radius: 20px ;
+	
+	border-bottom-right-radius: 20px;
+	transition: 0.7s ease-in-out;
+
+}
+#btn a{
+	color: transparent;
+	visibility: hidden;
+	text-decoration: none;
+	transition: 0.7s ease-in-out;
+}
+
+#btn:hover a{
+
+	color: black;
+	visibility: visible;
+}
+
+
+/* adding hover in our btn */
+
+#btn:hover{
+	width: 290px;
+}
+
+.bubbles img{
+	width: 55px;
+animation: bubble 7s linear infinite;
+animation: bubble 8s running infinite;
+}
+
+
+.bubbles {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	bottom: -70px;
+	position: absolute;
+}
+
+
+@keyframes bubble{
+	0%{
+		transform: translateY(0);
+		opacity: 0;
+	}
+
+	50%{
+		opacity: 1;
+	}
+
+	70%{
+		
+		opacity: 0.72;
+	}
+
+	80%{
+		
+		opacity: 0.8;
+	}
+
+
+	100%{
+		transform: translateY(-90vh);
+		opacity: 0;
+	}
+}
+
+.bubbles img:nth-child(1){
+	animation-delay: 2s;
+	width: 80px;
+}
+
+.bubbles img:nth-child(2){
+	animation-delay: 3s;
+	width: 67px;
+}
+
+.bubbles img:nth-child(3){
+	animation-delay: 1s;
+	width: 79px;
+}
+
+.bubbles img:nth-child(4){
+	animation-delay: 6s;
+	width: 68px ;
+}
+
+.bubbles img:nth-child(5){
+	animation-delay: 4s;
+	width: 60px;
+}
+
+.bubbles img:nth-child(6){
+	animation-delay: 7s;
+	width: 90px;
+}
+
+.bubbles img:nth-child(7){
+	animation-delay: 5s;
+	width: 60px;
+}
+
+
+.sidebar{
+	width: 50px;
+	height: 100vh;
+	background: whitesmoke;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+
+#hh:hover{
+	color: deeppink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ITZ THE TIME TO MAKE IT RESPONSIVE */
+@media only screen and (max-width: 700px){
+
+	/* FIRST LOGO */
+	.HEADER img{
+	width: 325px;
+	position: absolute;
+	top:  -12%;
+	left: -15%
+	
+}
+    
+.sidebar{
+	width: 28px;
+	height: 100vh;
+	background: silver;
+	opacity: 0.3;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#hh:hover{
+	color: deeppink;
+}
+
+    .container{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(images/BG-2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+    .content small{
+	
+	font-family: chiller;
+}
+
+
+/* styling our Heading 2 of content DIV */
+
+.content h2{
+	font-size: 50px;
+	font-family: Constantia;
+}
+
+/* styling our Para  of content DIV */
+
+.content p{
+	visibility: hidden;
+	font-size: 20px;
+	font-family: chiller;
+	font-style: italic;
+}
+
+.content button{
+	width: 90px;
+	height: 22px;
+	padding: 1px 1px;
+	position: absolute;
+	top: 90%;
+	left: 0.8%;
+	border: 1px solid whitesmoke;
+	border-top-left-radius: 20px ;
+	
+	border-bottom-right-radius: 20px;
+	transition: 0.7s ease-in-out;
+
+}
+#btn a{
+	text-decoration: none;
+	color: transparent;
+	visibility: hidden;
+	transition: 0.7s ease-in-out;
+}
+
+#btn:hover a{
+	margin-left: 70px;
+	font-family: Gabriola;
+
+	color: black;
+	visibility: visible;
+}
+
+
+/* adding hover in our btn */
+
+#btn:hover{
+	width: 180px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+    
+
+</head>
+<body>
+<!--#step1 CREATED A DIV NAMED CONTAINER -->
+<div class="container">
+	<nav class="HEADER">
+		<!-- LOGO OF WEB -->
+			<img src="images/LOGO.png" >
+		
+	</nav>
+
+	<!-- #step2 CREATED A DIV NAMED CONTENT  -->
+
+<div class="content">
+
+<small>WELCOME TO MY WEBSITE</small>
+<h2>ITZ <br> MEXTREME</h2>
+<p>This is website is mine and i had developed it by myself</p>	
+<button id="btn"><a href="#" id="hh">THANK YOU</a></button>
+
+</div>
+<div class="bubbles">
+	
+<img src="images/twi.png">
+<img src="images/twi.png">
+<img src="images/twi.png">
+<img src="images/twi.png">
+<img src="images/twi.png">
+<img src="images/twi.png">
+<img src="images/twi.png">
+
+
+</div> 
+
+
+
+</div>
+<div class="sidebar">
+	
+</div>
+</div>
+
+</body>
+</html>
